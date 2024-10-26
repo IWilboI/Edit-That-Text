@@ -1,10 +1,11 @@
 {
   "name": "JATE",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/index.js",
     "server": "nodemon server.js --ignore client",
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production"

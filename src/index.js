@@ -1,7 +1,7 @@
 import { Workbox } from 'workbox-window';
-import Editor from './js/editor';
-import './js/database';
-//import '../client/style.css';
+import './editor.js';   
+import './database.js';
+// import '../client/style.css'; // Uncomment if needed
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
@@ -17,7 +17,7 @@ const loadSpinner = () => {
   main.appendChild(spinner);
 };
 
-const editor = new Editor();
+const editor = getEditor(); // Call the function to get the editor instance
 
 if (typeof editor === 'undefined') {
   loadSpinner();

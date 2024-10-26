@@ -1,6 +1,6 @@
 import { getContent, putContent } from './database';
 
-const editor = document.querySelector('#editor');
+const editor = document.querySelector('#editor');  
 
 // Load saved content on startup
 window.addEventListener('load', async () => {
@@ -13,4 +13,7 @@ editor.addEventListener('blur', () => {
   putContent(editor.value);
 });
 
-export default Editor;
+// Export a function to get the editor instance
+export default function getEditor() {
+  return editor;
+}

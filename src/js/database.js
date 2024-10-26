@@ -30,3 +30,7 @@ export const getContent = async () => {
   const request = await store.get(1);
   return request?.value || '';
 };
+
+export default function getDatabase() {
+  return database;
+}
