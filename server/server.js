@@ -7,6 +7,8 @@ app.use(express.static('../client/dist'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
 
 require('./routes/htmlRoutes')(app);
 
