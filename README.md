@@ -39,5 +39,5 @@ THEN I should have proper build scripts for a webpack application
 ```
 ## Render URL: https://edit-that-text.onrender.com/ ##
 
-## npm run start:dev ##  in root
-## npm run build ## in client
+## npm run start:dev   in root ##
+## npm run build in client ##
