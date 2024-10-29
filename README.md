@@ -39,3 +39,5 @@ THEN I should have proper build scripts for a webpack application
 ```
 
 ## https://edit-that-text.onrender.com ##
+
+## npm run start:dev ##
